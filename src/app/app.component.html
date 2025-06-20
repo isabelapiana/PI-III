@@ -1,0 +1,84 @@
+<main class="main">
+  <div class="content">
+    <div class="acesso-por-regiao">
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [options]="chartOptions"
+        style="
+          width: 100%;
+          max-width: 100%;
+          height: 400px;
+          display: block;
+          box-sizing: border-box;
+        "
+      ></highcharts-chart>
+    </div>
+    <span
+      >Dados retirados do site:
+      https://www.cnnbrasil.com.br/nacional/mais-de-20-milhoes-de-brasileiros-nao-tem-internet-em-casa-diz-ibge/</span
+    >
+  </div>
+
+  <div class="graficos-adicionais">
+    <h1>
+      Pesquisa realizada em uma escola do município de Rio Brilhante com um
+      total de 47 alunos
+    </h1>
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="internetAccessChart"
+      style="
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        display: block;
+        box-sizing: border-box;
+      "
+    ></highcharts-chart>
+
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="internetProblemsChart"
+      style="
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        display: block;
+        box-sizing: border-box;
+      "
+    ></highcharts-chart>
+
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="devicesChart"
+      style="
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        display: block;
+        box-sizing: border-box;
+      "
+    ></highcharts-chart>
+
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="studyFrequencyChart"
+      style="
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        display: block;
+        box-sizing: border-box;
+      "
+    ></highcharts-chart>
+
+    <h2>
+      O presente trabalho foi desenvolvido pela aluna Isabela das Neves Piana,
+      com o auxílio da professora Maria Julia das Neves como parte da conclusão
+      da disciplina Projeto Integrador III do Curso Superior de Tecnologia de
+      Ciência dos Dados
+    </h2>
+  </div>
+</main>
+
+<router-outlet />
